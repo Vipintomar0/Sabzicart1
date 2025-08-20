@@ -1,0 +1,64 @@
+{
+	"name": "webpack-sample",
+	"displayName": "webpack-sample",
+	"description": "",
+	"version": "0.0.1",
+	"publisher": "vscode-samples",
+	"private": true,
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-extension-samples"
+	},
+	"engines": {
+		"vscode": "^1.100.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [],
+	"main": "./dist/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.helloWebpack",
+				"title": "Hello Webpack"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "webpack --mode production",
+		"webpack": "webpack --mode development",
+		"webpack-dev": "webpack --mode development --watch",
+		"test-compile": "tsc -p ./",
+		"lint": "eslint"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.13.0",
+		"@stylistic/eslint-plugin": "^2.9.0",
+		"@types/node": "^22",
+		"@types/vscode": "^1.100.0",
+		"autoprefixer": "^10.4.21",
+		"eslint": "^9.13.0",
+		"postcss": "^8.5.6",
+		"tailwindcss": "^4.1.12",
+		"ts-loader": "^7.0.5",
+		"typescript": "^5.9.2",
+		"typescript-eslint": "^8.39.0",
+		"webpack": "^5.75.0",
+		"webpack-cli": "^5.0.1"
+	},
+	"dependencies": {
+		"@heroicons/react": "^2.2.0",
+		"@reduxjs/toolkit": "^2.8.2",
+		"@tailwindcss/forms": "^0.5.10",
+		"axios": "^1.11.0",
+		"chart.js": "^4.5.0",
+		"dexie": "^4.2.0",
+		"formik": "^2.4.6",
+		"react-chartjs-2": "^5.3.0",
+		"react-redux": "^9.2.0",
+		"react-router-dom": "^7.8.1",
+		"yup": "^1.7.0"
+	}
+}
